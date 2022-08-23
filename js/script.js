@@ -12,7 +12,7 @@ pokemons.forEach(function (pokemon) {
 
 	elListImage.src = pokemon.img;
 	elListTitle.textContent = pokemon.name;
-	elListText.textContent = pokemon.weaknesses;
+	elListText.textContent = `Capabilities: ${pokemon.weaknesses}`;
 
 	elListDiv.append(elListImage, elListTitle, elListText);
 	elSiteDiv.appendChild(elListDiv);
